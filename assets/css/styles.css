@@ -1,0 +1,35 @@
+html, body {
+    margin: 0; 
+    height: 100%; 
+    font-size: 16px;
+     background-color: #715E53;
+}
+
+.sidebar-content {
+    height: 33%;
+}
+
+.labelCol {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    padding-bottom: 3rem;
+    background-color: #584c41;;
+}
+
+.artCol {
+    background-color: #f0dbc8
+}
+
+.content {
+    height: 100vh;
+}
+
+@media only screen and (max-width: 576px) {
+ .labelCol{
+     padding-bottom: 0;
+ }
+ .content {
+     height: auto;
+ }
+}
