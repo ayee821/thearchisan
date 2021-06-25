@@ -6,6 +6,10 @@ html, body {
     background-color: #715E53;
 }
 
+.content {
+    height: 100vh;
+}
+
 .sidebar {
     height: 100%;
     display: flex;
@@ -46,6 +50,28 @@ html, body {
 .quote-author {
     display: block;
     text-align: right;
+}
+
+.copyright {
+    font-size: .5rem;
+    text-align: center;
+    color: #FFF7ED;
+}
+
+.social-icon {
+    margin: 0 0 .5rem 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.social-icon .fa {
+    color: #FFF7ED;
+}
+
+.fa:hover {
+    color: #CB7F2A
 }
 
 .label-col {
@@ -99,7 +125,14 @@ html, body {
     height: 100%;
 }
 
-.art-col:after {
+.art-col-link {
+    display: flex;
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+}
+
+.art-col a:after {
     content: '';
     width: 100%;
     height: 100%;
@@ -115,39 +148,13 @@ html, body {
     background: transparent;
 } */
 
-.card-col:hover .art-col:after {
+.card-col:hover .art-col a:after {
     background: transparent;
 }
 
 .art-label:hover {
     color: #CB7F2A;
     text-decoration: none;
-}
-
-.content {
-    height: 100vh;
-}
-
-.copyright {
-    font-size: .5rem;
-    text-align: center;
-    color: #FFF7ED;
-}
-
-.social-icon {
-    margin: 0 0 .5rem 0;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.social-icon .fa {
-    color: #FFF7ED;
-}
-
-.fa:hover {
-    color: #CB7F2A
 }
 
 .gallery-col {
@@ -176,6 +183,10 @@ html, body {
 }
 
 @media only screen and (max-width: 576px) {
+     .content {
+        height: auto;
+    }
+
     .sidebar{
         padding-bottom: 0;
         position: relative;
@@ -207,9 +218,5 @@ html, body {
 
     .footer {
         padding: 1.5rem;
-    }
-
-    .content {
-        height: auto;
     }
 }
