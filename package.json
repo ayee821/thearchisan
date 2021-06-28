@@ -11,10 +11,9 @@
     "watch:scss": "onchange 'assets/css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "imagemin": "imagemin assets/img/* -o dist/img",
     "clean": "rimraf dist",
     "usemin": "usemin ink.html -d dist --htmlmin -o dist/ink.html && usemin digital.html -d dist --htmlmin -o dist/digital.html && usemin sketch.html -d dist --htmlmin -o dist/sketch.html && usemin index.html -d dist --htmlmin -o dist/index.html",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+    "build": "npm run clean && npm run copyfonts && npm run usemin"
   },
   "repository": {
     "type": "git"
