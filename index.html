@@ -9,16 +9,16 @@
 
     <link rel="stylesheet" href="assets/css/reset.css" />
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&display=swap" rel="stylesheet">
 
     <title>THE ARCHISAN</title>
 </head>
@@ -29,9 +29,36 @@
 
             <div class="col-sm-2 col-md-3 order-sm-4">
                 <div class="sidebar">
+                    <!--logo-->
                     <div class="logo-container">
                         <a href="/"><img src="assets/img/logo.jpeg" class="logo" alt="logo" /></a>
                     </div>
+                    <!--nav-->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!--quote-->
                     <div class="sidebar-content">
                         <p class="title">THE ARCHISAN</p>
                         <p class="quote">"Art is unquestionably one of the purest and highest elements in human
@@ -39,7 +66,8 @@
                             the eye through the mind. As the sun colours flowers, so does art colour life."<span
                                 class="quote-author">― John Lubbock</span></p>
                     </div>
-                    <div class="d-sm-none d-md-block d-none d-sm-block">
+                    <!--footer-sidebar-->
+                    <div class="d-none d-sm-block">
                         <ul class="social-icon">
                             <li class="social-icon-item">
                                 <a class="btn btn-social-icon" href="http://instagram.com/thearchisan"><i
@@ -58,7 +86,7 @@
                     </div>
                 </div>
             </div>
-
+            <!--content-->
             <div class="col-sm card-col">
                 <div class="row content">
                     <div class="col-sm-5 col-md-4 label-col">
@@ -100,7 +128,7 @@
                         </a>
                     </div>
                     <div class="col-sm art-col">
-                        <a href="digital.html" class="art-col-link">
+                        <a href="sketch.html" class="art-col-link">
                         <img src="assets/img/sketch1.jpeg" class="img-fluid" alt="sketch" />
                         </a>
                     </div>
@@ -110,7 +138,7 @@
         </div>
     </div>
 
-    <footer class="d-sm-block d-md-none d-block d-sm-none footer">
+    <footer class="d-block d-sm-none footer">
         <ul class="social-icon">
             <li class="social-icon-item">
                 <a class="btn btn-social-icon" href="http://instagram.com/thearchisan"><i class="fa fa-instagram"></i></a>
@@ -126,10 +154,12 @@
     </footer>
 
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <!-- endbuild -->
 
 </body>
 
